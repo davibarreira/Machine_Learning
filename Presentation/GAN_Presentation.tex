@@ -54,9 +54,9 @@
 
     \begin{figure}[H]
         \centering
-        \includegraphics[width=6cm]{images/gans-faces.png}
-        \caption{Faces geradas por GAN
-        \footnote{https://towardsdatascience.com/generating-modern-arts-using-generative-adversarial-network-gan-on-spell-39f67f83c7b4}.}
+        \includegraphics[width=8cm]{images/gans-faces.png}
+        \caption{Faces geradas por GANs
+        \footnote{Faces geradas por \citet{karras2018}}.}
     \end{figure}
 
 \end{frame}
@@ -403,9 +403,42 @@
 \end{frame}
 
 \AtBeginSection{}
-\section[Desafios]{Implementações e Desafios}
-\begin{frame}[fragile]{Implementações e Desafios}
+\section[Variações]{Variações}
+\begin{frame}[fragile]{Variações}
 
+	Além do modelo tradicional apresentado, variações de GANs
+	tem surgido para diferentes aplicações.
+
+	\begin{itemize}
+		\item \textbf{DCGAN}: Uso de Convolutional Neural Networks
+		em GANs para melhorar o processo de geração de dados sintéticos.
+		\item \textbf{Face Inpainting}: Utilização de GANs para
+		"reconstrução" de imagens com partes faltantes.
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=4cm]{images/gan-inpainting.png}
+        \caption{Inpainting usando GAN \citep{yeh2017}.}
+    \end{figure}
+
+		\item \textbf{Transferência Imagem-Imgeam}:
+		Utilização de GANs para transformar um grupo de imagens
+		em outro, como no exemplo de transferência de estilo.
+
+
+	\end{itemize}
+
+\end{frame}
+
+\begin{frame}[fragile]{Variações}
+
+	A arquitetura \textbf{CycleGAN} \citep{zhu2017} é uma das
+	mais utilizadas para transferências imagem-imagem.
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=10cm]{images/gan-cyclearch.jpg}
+        \caption{Architetura de uma CycleGAN \citep{kang2019}.}
+    \end{figure}
 
 \end{frame}
 

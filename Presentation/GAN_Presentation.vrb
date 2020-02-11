@@ -1,3 +1,10 @@
-\frametitle{Implementações e Desafios}
+\frametitle{Variações}
 
+	A arquitetura \textbf{CycleGAN} \citep{zhu2017} é uma das
+	mais utilizadas para transferências imagem-imagem.
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=10cm]{images/gan-cyclearch.jpg}
+        \caption{Architetura de uma CycleGAN \citep{kang2019}.}
+    \end{figure}
 

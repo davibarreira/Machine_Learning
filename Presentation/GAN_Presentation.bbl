@@ -8,4 +8,31 @@ Goodfellow, I., Pouget-Abadie, J., Mirza, M., Xu, B., Warde-Farley, D., Ozair,
   Weinberger, K.~Q., editors, {\em Advances in Neural Information Processing
   Systems 27}, pages 2672--2680. Curran Associates, Inc.
 
+\bibitem[\protect\astroncite{Kang et~al.}{2019}]{kang2019}
+Kang, Y., Gao, S., and Roth, R. (2019).
+\newblock Transferring multiscale map styles using generative adversarial
+  networks.
+\newblock {\em International Journal of Cartography}.
+
+\bibitem[\protect\astroncite{Karras et~al.}{2018}]{karras2018}
+Karras, T., Laine, S., and Aila, T. (2018).
+\newblock A style-based generator architecture for generative adversarial
+  networks.
+\newblock {\em 2019 IEEE/CVF Conference on Computer Vision and Pattern
+  Recognition (CVPR)}, pages 4396--4405.
+
+\bibitem[\protect\astroncite{Yeh et~al.}{2017}]{yeh2017}
+Yeh, R.~A., Chen, C., Yian~Lim, T., Schwing, A.~G., Hasegawa-Johnson, M., and
+  Do, M.~N. (2017).
+\newblock Semantic image inpainting with deep generative models.
+\newblock In {\em Proceedings of the IEEE conference on computer vision and
+  pattern recognition}, pages 5485--5493.
+
+\bibitem[\protect\astroncite{Zhu et~al.}{2017}]{zhu2017}
+Zhu, J.-Y., Park, T., Isola, P., and Efros, A.~A. (2017).
+\newblock Unpaired image-to-image translation using cycle-consistent
+  adversarial networks.
+\newblock {\em 2017 IEEE International Conference on Computer Vision (ICCV)},
+  pages 2242--2251.
+
 \end{thebibliography}
