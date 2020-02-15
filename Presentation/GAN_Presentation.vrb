@@ -1,26 +1,6 @@
-\frametitle{Problemas Típicos}
-Soluções propostas para esses problemas são:
+\frametitle{Anexo}
 \small
-\begin{itemize}
-	\item \textbf{Dissipação de gradientes:}
-	\begin{enumerate}
-		\item Alterar a função objetivo do gerador para
-		$C(G) = \max \log(D^*(G(z)))$ \citep{goodfellow2014}.
-		\item WGAN - Utilizar métrica Wasserstein, definida abaixo,
-		como função objetivo \citep{wgan2017}.
-	\end{enumerate}
-
-  \item  \textbf{``Mode Colapse"}:
-	\begin{enumerate}
-		\item WGAN.
-	\end{enumerate}
-
-  \item \textbf{Falha de Converêgncia}:
-	\begin{enumerate}
-		\item Adicionar ruído nas entradas do discriminador.
-
-  		\item Penalizar pesos do Discriminador.
-
-	\end{enumerate}
-\end{itemize}
-
+  Dessa forma, D deixa de ser um Discriminador (com saída [0,1]) que buscava descobrir quais amostras são falsas ou verdadeiras e se transforma em um Crítico (com saída $\geq0$), treinado para aprender funções contínuas K-Lipschitz que ajudarão a computar a métrica Wasserstein. \\
+  A função objetivo da nova GAN (WGAN) passa a ser então.
+  $$V(G,D) = \min_{\theta} \max_{w \in W} \mathbb{E}_{x~p_{data}}[D_w(x)] - \mathbb{E}_{z~p_z~}[D_w(G_{\theta}(z))] \text{, tal que } ||D_w||_L \leq K$$
+  Uma vez que a métrica Wasserstein tem um comportamento suave ela elimina o problema da dissipação do gradiente.
