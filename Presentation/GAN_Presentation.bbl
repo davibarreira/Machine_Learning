@@ -1,5 +1,14 @@
 \begin{thebibliography}{}
 
+\bibitem[\protect\astroncite{Arjovsky and Bottou}{2017}]{arjovsky2017}
+Arjovsky, M. and Bottou, L. (2017).
+\newblock Towards principled methods for training generative adversarial
+  networks.
+
+\bibitem[\protect\astroncite{Arjovsky et~al.}{2017}]{wgan2017}
+Arjovsky, M., Chintala, S., and Bottou, L. (2017).
+\newblock Wasserstein gan.
+
 \bibitem[\protect\astroncite{Goodfellow et~al.}{2014}]{goodfellow2014}
 Goodfellow, I., Pouget-Abadie, J., Mirza, M., Xu, B., Warde-Farley, D., Ozair,
   S., Courville, A., and Bengio, Y. (2014).

@@ -1,10 +1,26 @@
-\frametitle{Variações}
+\frametitle{Problemas Típicos}
+Soluções propostas para esses problemas são:
+\small
+\begin{itemize}
+	\item \textbf{Dissipação de gradientes:}
+	\begin{enumerate}
+		\item Alterar a função objetivo do gerador para
+		$C(G) = \max \log(D^*(G(z)))$ \citep{goodfellow2014}.
+		\item WGAN - Utilizar métrica Wasserstein, definida abaixo,
+		como função objetivo \citep{wgan2017}.
+	\end{enumerate}
 
-	A arquitetura \textbf{CycleGAN} \citep{zhu2017} é uma das
-	mais utilizadas para transferências imagem-imagem.
-    \begin{figure}[H]
-        \centering
-        \includegraphics[width=10cm]{images/gan-cyclearch.jpg}
-        \caption{Architetura de uma CycleGAN \citep{kang2019}.}
-    \end{figure}
+  \item  \textbf{``Mode Colapse"}:
+	\begin{enumerate}
+		\item WGAN.
+	\end{enumerate}
+
+  \item \textbf{Falha de Converêgncia}:
+	\begin{enumerate}
+		\item Adicionar ruído nas entradas do discriminador.
+
+  		\item Penalizar pesos do Discriminador.
+
+	\end{enumerate}
+\end{itemize}
 

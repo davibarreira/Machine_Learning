@@ -442,6 +442,60 @@
 
 \end{frame}
 
+\AtBeginSection{}
+\section[Problemas Típicos]{Problemas Típicos}
+\begin{frame}[fragile]{Problemas Típicos}
+GANs tradicionais possuem falhas comuns que tem sido foco
+de pesquisas. \citet{arjovsky2017} clarificaram a fonte desses
+problemas e propuseram algumas soluções.
+\small
+\begin{itemize}
+	\item \textbf{Dissipação de gradientes:} Na prática, ao treinar
+	o descriminador até seu estado ótimo ($\frac{p_{data}}
+	{p_{data} + p_g}$), os gradientes tendem a se dissipar
+	no treinamento do gerador
+  $$\lim_{||D-D^*||\to0}\nabla_{\theta}\mathbb{E}_{z~p(z)}\left[\log{(1-D(G_{\theta}(z)))}\right] = 0$$
+
+  \item  \textbf{``Mode Colapse"}: Normalmente, você deseja que sua GAN
+  produza uma ampla variedade de saídas. No entanto, se um gerador produz
+  uma saída especialmente plausível, ele pode aprender a produzir apenas
+  essa saída.
+
+  \item \textbf{Falha de Converêgncia}: GANs podem apresentar instabilidade
+  na atualização dos gradientes do gerador, levando a falhas de
+  convergência.
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}[fragile]{Problemas Típicos}
+Soluções propostas para esses problemas são:
+\small
+\begin{itemize}
+	\item \textbf{Dissipação de gradientes:}
+	\begin{enumerate}
+		\item Alterar a função objetivo do gerador para
+		$C(G) = \max \log(D^*(G(z)))$ \citep{goodfellow2014}.
+		\item WGAN - Utilizar métrica Wasserstein, definida abaixo,
+		como função objetivo \citep{wgan2017}.
+	\end{enumerate}
+
+  \item  \textbf{``Mode Colapse"}:
+	\begin{enumerate}
+		\item WGAN.
+	\end{enumerate}
+
+  \item \textbf{Falha de Converêgncia}:
+	\begin{enumerate}
+		\item Adicionar ruído nas entradas do discriminador.
+  
+  		\item Penalizar pesos do Discriminador.
+
+	\end{enumerate}
+\end{itemize}
+
+\end{frame}
+
 
 \begin{frame}[allowframebreaks]{References}
 
