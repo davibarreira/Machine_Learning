@@ -128,7 +128,7 @@
     $$
     \min_{G} \max_D V(D,G) =
     \mathbb{E}_{x\sim p_{data}(\bm x)}\left[\log{(D(\bm x))}\right]+
-    \mathbb{E}_{z\sim p_z(\bm z)}\left[1-\log{(D(G(\bm z)))}\right]
+    \mathbb{E}_{z\sim p_z(\bm z)}\left[\log(1-D(G(\bm z))\right]
     $$
 
     \begin{figure}[H]
@@ -206,7 +206,7 @@
 	ótimo dado G com $p_g$ sendo atualizado para melhorar o critério
     $$
     \mathbb{E}_{x\sim p_{data}(\bm x)}\left[\log{(D(\bm x))}\right]+
-    \mathbb{E}_{x\sim p_g(\bm x)}\left[1-\log{(D(\bm x))}\right]
+    \mathbb{E}_{z\sim p_z(\bm z)}\left[\log(1-D(G(\bm z))\right]
     $$
     então $p_g$ converge para $p_{data}$.
 
@@ -224,13 +224,13 @@
 	\hrule
   $$V(D,G)=
     \mathbb{E}_{x\sim p_{data}(\bm x)}\left[\log{(D(\bm x))}\right]+
-    \mathbb{E}_{z\sim p_z(\bm z)}\left[1-\log{(D(G(\bm z)))}\right]
+    \mathbb{E}_{z\sim p_z(\bm z)}\left[\log(1-D(G(\bm z))\right]
   $$
   \pause
   $$= \int_x p_{data}(x)\log{(D(x))}dx + \int_z p_z(z)\log{(1-D(G(z)))}dz $$
   \pause
-  $$x = G(z) \implies z = G^{-1}(x) \implies dz = (G^{-1}(x))dx $$
-  $$p_g(x) = p_z(G^{-1})(G^{-1})'(x)dx $$
+  $$x = G(z) \implies z = G^{-1}(x) \implies dz = (G^{-1})'(x)dx $$
+  $$p_g(x) = p_z(G^{-1}(x))(G^{-1})'(x)dx $$
   \pause
   $$= \int_x p_{data}(x)\log{(D(x))}dx + \int_x p_z(G^{-1}(x))\log{(1-D(x))}(G^{-1})'(x)dx $$
   \pause
