@@ -1,5 +1,5 @@
 \beamer@sectionintoc {1}{Introdu\IeC {\c c}\IeC {\~a}o}{3}{0}{1}
 \beamer@sectionintoc {2}{Formaliza\IeC {\c c}\IeC {\~a}o Te\IeC {\'o}rica}{6}{0}{2}
-\beamer@sectionintoc {3}{Varia\IeC {\c c}\IeC {\~o}es}{26}{0}{3}
-\beamer@sectionintoc {4}{Problemas T\IeC {\'\i }picos}{28}{0}{4}
+\beamer@sectionintoc {3}{Problemas T\IeC {\'\i }picos}{26}{0}{3}
+\beamer@sectionintoc {4}{Varia\IeC {\c c}\IeC {\~o}es}{28}{0}{4}
 \beamer@sectionintoc {5}{Anexo}{32}{0}{5}
